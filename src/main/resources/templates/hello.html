@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div th:each="image: ${images}">
+    <img th:src="${image.url}" alt="" srcset="">
+</div>
+<script>
+    function js_onload_code() {
+        alert("site is loading")
+    }
+
+window.onload = js_onload_code();
+</script>
+</body>
+</html>

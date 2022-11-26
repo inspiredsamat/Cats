@@ -1,0 +1,6 @@
+div {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    border: 2px red dashed;
+}
